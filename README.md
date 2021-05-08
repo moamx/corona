@@ -29,12 +29,12 @@
 $ sudo apt update
 $ sudo apt install python3 
 ```
-2️⃣ تحمل المكاتب
+2️⃣ تحميل المكاتب
 ``` 
 $ pip install pyTelegramBotAPI
 $ pip install requests
 ```
-3️⃣ تحمل البوت
+3️⃣ تحميل البوت
 ``` 
 $ git clone https://github.com/moamx/corona.git
 ```
@@ -42,7 +42,7 @@ $ git clone https://github.com/moamx/corona.git
 ``` 
 $ cd corona
 ```
-5️⃣ تشغل البوت
+5️⃣ تشغيل البوت
 ``` 
 $ python3 bot.py
 ```
