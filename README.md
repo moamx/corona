@@ -82,8 +82,8 @@ Bot Has Been Started >>>>>>>>>>>>>>>>>
 
 ## About Developerer
 
-<img width="200" alt="portfolio_view" src="https://i.pinimg.com/originals/b0/05/02/b00502f2f3f8d22ef21cefe7f51ea509.png">
+<img width="30" height="30" alt="portfolio_view" src="https://i.pinimg.com/originals/b0/05/02/b00502f2f3f8d22ef21cefe7f51ea509.png"> [Moresxx](https://www.instagram.com/moresxx)
 
-
-[](https://i.pinimg.com/originals/b0/05/02/b00502f2f3f8d22ef21cefe7f51ea509.png =30x30) [Moresxx](https://www.instagram.com/moresxx)
+<img width="30" height="30" alt="portfolio_view" src="https://uploads-ssl.webflow.com/5c5cb9516efacb6abe10c2f2/5ca28f0b5d56d6ab0b634ca3_telegram.png"> [DaaaD](https://t.me/DaaaD)
+[](https://i.pinimg.com/originals/b0/05/02/b00502f2f3f8d22ef21cefe7f51ea509.png =30x30) 
 [](https://uploads-ssl.webflow.com/5c5cb9516efacb6abe10c2f2/5ca28f0b5d56d6ab0b634ca3_telegram.png =30x30) [DaaaD](https://t.me/DaaaD)
