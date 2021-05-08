@@ -24,6 +24,7 @@
 ## طريقه التنصيب
 
 1️⃣ تنزل بايثون
+-
 ``` 
 $ sudo apt update
 $ sudo apt install python3 
@@ -45,29 +46,42 @@ $ cd corona
 ``` 
 $ python3 bot.py
 ```
+6️⃣ طريقه ملئ الحقول
+
+``` 
+بعد تشغيل الملف يطلع لك هيج 
+
+[?] Send Bot Token :
+
+ارسل توكن البوت مثال : 
+
+1707662645:AAEF8RZpuSvlNCq-M57K-VbdB_N_PTnsYCg
+
+بعدها يرسل لك 
+
+[?] Send Admin ID :
+
+ارسل له الايدي مالتك مثال :
+
+1683102194
+
+بعدها يرسل لك 
+
+[?] Send Channel Username Without (@) : 
+
+1- ارفع البوت ادمن بقناتك
+2- ارسل معرف القناة بدون علامة (@) مثال : Moamx_Code
+
+اذا ارسل لك هيج 
+
+Bot Has Been Started >>>>>>>>>>>>>>>>>
+
+%معناتها البوا اشتغل 100
+وتتهنون فيه 🤍🤍!
+```
+
+## About Developerer
 
 
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
+![](https://i.pinimg.com/originals/b0/05/02/b00502f2f3f8d22ef21cefe7f51ea509.png =30x30) [Moresxx](https://www.instagram.com/moresxx)
+![](https://uploads-ssl.webflow.com/5c5cb9516efacb6abe10c2f2/5ca28f0b5d56d6ab0b634ca3_telegram.png =30x30) [DaaaD](https://t.me/DaaaD)
